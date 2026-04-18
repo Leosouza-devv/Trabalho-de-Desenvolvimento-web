@@ -1,0 +1,38 @@
+
+:root {
+  --primary:    #8B4513;
+  --secondary:  #D2691E;
+  --accent:     #6B8E23;
+  --background: #FFF8F0;
+  --fff:        #FFFFFF;
+  --text:       #271e1d;
+
+  /* Derivadas */
+  --primary-light:    #f5e9de;
+  --secondary-light:  #faeade;
+  --accent-light:     #eef2e3;
+  --border:           #e4d5c3;
+  --text-suave:       #7a5a48;
+  --text-muted:       #a88470;
+
+  --font-titulo: 'Playfair Display', Georgia, serif;
+  --font-corpo:  'Lato', system-ui, sans-serif;
+
+  --raio-sm: 6px;
+  --raio-md: 12px;
+  --raio-lg: 20px;
+
+  --sombra: 0 2px 16px rgba(139, 69, 19, 0.07);
+  --transicao: 0.22s ease;
+
+  --max-width: 780px;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+

@@ -1,0 +1,258 @@
+
+
+
+
+main.receitas {
+  width: 70dvw;
+  position: relative;
+  top: 3vh;      
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+
+}
+
+.introdução {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.introdução h1 {
+  font-family: var(--font-titulo);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--fff);
+  line-height: 1.15;
+}
+
+.introdução p {
+  font-size: 1.05rem;
+  color: var(--text-suave);
+  max-width: 620px;
+}
+
+/* Imagem principal */
+.introdução img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--raio-lg);
+  border: 1px solid var(--border);
+}
+
+/* Metadados (tempo, porções, dificuldade) */
+.receita-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--fff);
+  border: 1px solid var(--border);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra);
+}
+
+.receita-meta__item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  color: var(--text-suave);
+}
+
+.receita-meta__item strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.receita-meta__item::after {
+  content: '·';
+  margin-left: 0.75rem;
+  color: var(--border);
+}
+
+.receita-meta__item:last-child::after {
+  display: none;
+}
+
+/* DIVISOR ENTRE SEÇÕES */
+.introdução,
+.ingredientes,
+.modo_de_preparo {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modo_de_preparo {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* TÍTULOS DE SEÇÃO (h2) */
+.ingredientes h2,
+.modo_de_preparo h2 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--secondary-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Linha decorativa no título */
+.ingredientes h2::before,
+.modo_de_preparo h2::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 1.2em;
+  background: var(--secondary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* SEÇÃO: INGREDIENTES */
+.ingredientes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--fff);
+  border: 1px solid var(--border);
+  border-radius: var(--raio-md);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.ingredientes ul li {
+  font-size: 0.95rem;
+  color: var(--text);
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: background var(--transicao);
+}
+
+.ingredientes ul li:last-child {
+  border-bottom: none;
+}
+
+.ingredientes ul li:hover {
+  background: var(--primary-light);
+}
+
+/* Bolinha decorativa */
+.ingredientes ul li::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Quantidade em destaque — opcional: envolva em <strong> */
+.ingredientes ul li strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* SEÇÃO: MODO DE PREPARO */
+.modo_de_preparo ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.modo_de_preparo ol li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--fff);
+  border: 1px solid var(--border);
+  border-radius: var(--raio-md);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--sombra);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text);
+  transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.modo_de_preparo ol li:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 4px 20px rgba(139, 69, 19, 0.1);
+}
+
+/* Número do passo */
+.modo_de_preparo ol {
+  counter-reset: passo;
+}
+
+.modo_de_preparo ol li::before {
+  counter-increment: passo;
+  content: counter(passo);
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--fff);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dica {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--raio-sm) var(--raio-sm) 0;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-suave);
+  margin-top: 1.5rem;
+}
+
+/* DICA / OBSERVAÇÃO — classe opcional .dica */
+.dica strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  main {
+    padding: 1.5rem 1rem 4rem;
+    gap: 2.25rem;
+  }
+
+  .introdução h1 {
+    font-size: 1.8rem;
+  }
+
+  .receita-meta {
+    gap: 0.5rem;
+  }
+
+  .receita-meta__item::after {
+    display: none;
+  }
+
+  .modo_de_preparo ol li {
+    padding: 0.9rem 1rem;
+  }
+}
