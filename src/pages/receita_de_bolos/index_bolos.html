@@ -1,225 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabor & Arte — Gastronomia com Alma</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../../styles/base/reset.css">
-    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/base/reset.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
 
-    <link rel="stylesheet" href="../../styles/layout/header.css">
-    <link rel="stylesheet" href="../../styles/layout/footer.css">
+    <link rel="stylesheet" href="../../styles/layout/header.css" />
+    <link rel="stylesheet" href="../../styles/layout/footer.css" />
 
-    <link rel="stylesheet" href="../../styles/layout/index_receitas.css">
+    <link rel="stylesheet" href="../../styles/layout/index_receitas.css" />
+  </head>
 
-
-
-
-
-
-</head>
-
-<body>
-
+  <body>
     <!-- header - navbar-->
     <header>
-        <nav>
-            <a class="nav-logo" href="../../../index.html">Sabor &amp; Arte</a>
-            <ul class="nav-links">
-                <li><a href="#receitas">Receitas</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a class="nav-logo" href="../../../index.html">Sabor &amp; Arte</a>
+        <ul class="nav-links">
+          <li><a href="#receitas">Receitas</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="index_receitas">
+      <section class="introdução">
+        <div class="intro-bg-circles">
+          <!-- círculos decorativos via CSS -->
+        </div>
+        <div class="intro-ornament-top"></div>
+        <div class="intro-content">
+          <span class="intro-label">receitas artesanais</span>
+          <h1 class="intro-title">Bolos</h1>
+          <div class="intro-divider">
+            <span class="intro-divider-line"></span>
+            <svg class="intro-divider-icon" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M9 2v3M9 13v3M2 9h3M13 9h3"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="9"
+                cy="9"
+                r="3"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+            </svg>
+            <span class="intro-divider-line"></span>
+          </div>
+          <p class="intro-desc">
+            Cada fatia carrega um abraço. Aqui você encontra receitas que
+            <em>transformam ingredientes simples</em> em momentos que ficam na
+            memória.
+          </p>
+        </div>
+        <div class="intro-ornament"></div>
+      </section>
 
-        <section class="introdução">
-            <div class="intro-bg-circles">
-                <!-- círculos decorativos via CSS -->
+      <span id="receitas"></span>
+
+      <section class="main_content">
+        <h2 class="section-title">Mais Populares</h2>
+        <div class="recipes-grid" id="recipesGrid">
+          <!-- Card em destaque -->
+          <article class="recipe-card featured" data-cat="doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/pvHgkpbVqjN8H_oGcRsq3NnWnm67vdVlYG6l8z5poB0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ib2xv/c3BhcmF2ZW5kZXIu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE5LzEyL2JvbG8t/ZGUtbWVsLmpwZw"
+                alt="Bolo de Mel"
+              />
+              <span class="badge badge-category">Doces</span>
+              <span class="badge badge-featured">Destaque</span>
             </div>
-            <div class="intro-ornament-top"></div>
-            <div class="intro-content">
-                <span class="intro-label">receitas artesanais</span>
-                <h1 class="intro-title">Bolos</h1>
-                <div class="intro-divider">
-                    <span class="intro-divider-line"></span>
-                    <svg class="intro-divider-icon" viewBox="0 0 18 18" fill="none">
-                        <path d="M9 2v3M9 13v3M2 9h3M13 9h3" stroke="currentColor" stroke-width="1.4"
-                            stroke-linecap="round" />
-                        <circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.4" />
-                    </svg>
-                    <span class="intro-divider-line"></span>
-                </div>
-                <p class="intro-desc">
-                    Cada fatia carrega um abraço. Aqui você encontra receitas que
-                    <em>transformam ingredientes simples</em> em momentos que ficam na memória.
-                </p>
+            <div class="card-body">
+              <h3 class="card-title">Bolo de Mel com Especiarias</h3>
+              <p class="card-desc">
+                Um bolo úmido e aromático com gengibre, canela e mel artesanal.
+                Perfeito para o café da manhã ou lanche da tarde.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  50–60 minutos
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M2 13c0-3.3 2.7-6 6-6s6 2.7 6 6"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <circle
+                      cx="8"
+                      cy="5"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  8 porções
+                </span>
+                <span class="meta-item difficulty medium">Médio</span>
+              </div>
+              <a
+                href="../receita_de_bolos/receita_bolo_de_mel.html"
+                class="card-link"
+                >Ver receita completa →</a
+              >
             </div>
-            <div class="intro-ornament"></div>
-        </section>
+          </article>
 
-        <span id="receitas"></span>
-
-        <section class="main_content">
-            <h2 class="section-title">Mais Populares</h2>
-            <div class="recipes-grid" id="recipesGrid">
-
-                <!-- Card em destaque -->
-                <article class="recipe-card featured" data-cat="doces">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400/D2691E/FFF8F0?text=Receita+em+Destaque"
-                            alt="Bolo de Mel" />
-                        <span class="badge badge-category">Doces</span>
-                        <span class="badge badge-featured">Destaque</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Bolo de Mel com Especiarias</h3>
-                        <p class="card-desc">Um bolo úmido e aromático com gengibre, canela e mel artesanal. Perfeito
-                            para o café da manhã ou lanche da tarde.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                45 min
-                            </span>
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 13c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor"
-                                        stroke-width="1.2" />
-                                    <circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.2" />
-                                </svg>
-                                8 porções
-                            </span>
-                            <span class="meta-item difficulty medium">Médio</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <!-- Cards normais -->
-                <article class="recipe-card" data-cat="salgados">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/8B4513/FFF8F0?text=Pão+Artesanal" alt="Pão Artesanal" />
-                        <span class="badge badge-category">Salgados</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Pão Artesanal de Fermentação Natural</h3>
-                        <p class="card-desc">Crocante por fora, macio por dentro. Uma receita que vale cada hora de
-                            espera.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                3h 20min
-                            </span>
-                            <span class="meta-item difficulty hard">Avançado</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="doces">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/6B8E23/FFF8F0?text=Torta+de+Maçã" alt="Torta de Maçã" />
-                        <span class="badge badge-category">Doces</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Torta Rústica de Maçã com Canela</h3>
-                        <p class="card-desc">Uma torta simples e reconfortante que lembra as receitas de vó.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                1h 10min
-                            </span>
-                            <span class="meta-item difficulty easy">Fácil</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="bebidas vegano">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/D2691E/FFF8F0?text=Limonada+Rosa" alt="Limonada Rosa" />
-                        <span class="badge badge-category">Bebidas</span>
-                        <span class="badge badge-vegan">Vegano</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Limonada Rosa com Hibisco</h3>
-                        <p class="card-desc">Refrescante e cheia de cor, essa bebida é sucesso garantido nas reuniões de
-                            família.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                15 min
-                            </span>
-                            <span class="meta-item difficulty easy">Fácil</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="vegano salgados">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/6B8E23/FFF8F0?text=Quiche+Vegana" alt="Quiche Vegana" />
-                        <span class="badge badge-category">Salgados</span>
-                        <span class="badge badge-vegan">Vegano</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Quiche Vegana de Alho-Poró</h3>
-                        <p class="card-desc">Uma quiche cremosa e saborosa sem ovos nem laticínios. Surpreendente!</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                55 min
-                            </span>
-                            <span class="meta-item difficulty medium">Médio</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
+          <!-- Cards normais -->
+          <article class="recipe-card" data-cat="DOCES">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/DOSQCywMfCa_F_z7Ay24TPghO9sB_9hktBTqDCKKPRk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaXRkZy5jb20u/YnIvaW1hZ2VzLzY0/MC00MDAvODllNmRk/YzBhNWRjMDE1OTdi/MTUzMjE5NDRhNGUw/NTgvMzkxMjEtb3Jp/Z2luYWwuanBn"
+                alt="Bolo de Cenoura"
+              />
+              <span class="badge badge-category">Doces</span>
             </div>
-        </section>
+            <div class="card-body">
+              <h3 class="card-title">Bolo de Cenoura</h3>
+              <p class="card-desc">
+                É um doce clássico brasileiro, amplamente pesquisado e
+                consumido, geralmente preparado com massa úmida e fofa coberta
+                por chocolate.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  45–55 minutos
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a
+                href="../receita_de_bolos/receita_bolo_de_cenoura.html"
+                class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/oJqluVcy-sTC1Xw9xY1nBxGL_XHIMdRXJ4W9uqIBmtc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE5/MTQ1ODgxMi9wdC9m/b3RvL2Nob2NvbGF0/ZS1sYXllci1jYWtl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1qQ0p3OUJiWVlR/SUF3LW8tQ1NfWEVp/akd2LXo5MU1Ua2ZR/VnNZRV9BeTN3PQ"
+                alt="Bolo de Chocolate"
+              />
+              <span class="badge badge-category">Doces</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bolo de Chocolate</h3>
+              <p class="card-desc">
+                Um bolo rico e saboroso, perfeito para comemorações.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  45–50 minutos
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a
+                href="../receita_de_bolos/receita_bolo_de_chocolate.html"
+                class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="vegano">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/1BM8-vIQOIKZxmGy33z8R4DrCpT2f8b8wNUrEazIMYw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cmVjZWl0ZXJpYS5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/L2JvbG8tZGUtbGFy/YW5qYS1jb20tY2Fz/Y2Etbm8tbGlxdWlk/aWZpY2Fkb3ItNDAw/eDIyMC5qcGVn"
+                alt="Bolo de Laranja Vegano"
+              />
+              <span class="badge badge-category">VEGANO</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bolo de Laranja vegano</h3>
+              <p class="card-desc">
+                É uma receita fácil, fofinha e sem lactose ou ovos, ideal para
+                acompanhar café ou chá.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  40–50 minutos
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a
+                href="../receita_de_bolos/receita_de_bolo_de_laranja.html"
+                class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="salgados">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/6TK8baxtzQDJLWAiT-OACNJ_EhIyTeA3pCcX9adHugc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaXRkZy5jb20u/YnIvaW1hZ2VzLzY0/MC00MDAvODkxMDIy/YjJiOWUyOWVjMThj/MTE4ZDAyMWVhOWJh/YzYvMzI0Nzc1LW9y/aWdpbmFsLmpwZw"
+                alt="Bolo Salgado"
+              />
+              <span class="badge badge-category">Salgados</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bolo Salgado</h3>
+              <p class="card-desc">
+                É uma opção prática, rápida e econômica para lanches, almoços ou
+                jantares, sendo popularmente conhecido por sua massa fofinha e
+                versatilidade de recheios.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  50–60 minutos
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a
+                href="../receita_de_bolos/receita_bolo_salgado.html"
+                class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer>
-        <!-- FRASE DE DESTAQUE -->
-        <section class="quote-band">
-            <blockquote>
-                "Cozinhar é um ato de amor — para com quem recebe o prato e
-                para com quem o preparou."
-                <cite>— Sabor &amp; Arte</cite>
-            </blockquote>
-        </section>
-        <p>Desenvolvido por <strong>Leonardo S. Souza | Gabriel Serafim | Venancio Trancoso | Gustavo
-                Andrade</strong> · Trabalho Acadêmico · 2026</p>
+      <!-- FRASE DE DESTAQUE -->
+      <section class="quote-band">
+        <blockquote>
+          "Cozinhar é um ato de amor — para com quem recebe o prato e para com
+          quem o preparou."
+          <cite>— Sabor &amp; Arte</cite>
+        </blockquote>
+      </section>
+      <p>
+        Desenvolvido por
+        <strong
+          >Leonardo S. Souza | Gabriel Serafim | Venancio Trancoso | Gustavo
+          Andrade</strong
+        >
+        · Trabalho Acadêmico · 2026
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>

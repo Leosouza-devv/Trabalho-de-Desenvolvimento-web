@@ -1,223 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabor & Arte — Gastronomia com Alma</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../../styles/base/reset.css">
-    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/base/reset.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
 
-    <link rel="stylesheet" href="../../styles/layout/header.css">
-    <link rel="stylesheet" href="../../styles/layout/footer.css">
+    <link rel="stylesheet" href="../../styles/layout/header.css" />
+    <link rel="stylesheet" href="../../styles/layout/footer.css" />
 
-    <link rel="stylesheet" href="../../styles/layout/index_receitas.css">
+    <link rel="stylesheet" href="../../styles/layout/index_receitas.css" />
+  </head>
 
-
-
-
-
-
-</head>
-
-<body>
-
+  <body>
     <!-- header - navbar-->
     <header>
-        <nav>
-            <a class="nav-logo" href="../../../index.html">Sabor &amp; Arte</a>
-            <ul class="nav-links">
-                <li><a href="#receitas">Receitas</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a class="nav-logo" href="../../../index.html">Sabor &amp; Arte</a>
+        <ul class="nav-links">
+          <li><a href="#receitas">Receitas</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="receitas">
+      <section class="introdução">
+        <div class="intro-ornament-top"></div>
+        <div class="intro-content">
+          <span class="intro-label">receitas artesanais</span>
+          <h1 class="intro-title">Pães</h1>
+          <div class="intro-divider">
+            <span class="intro-divider-line"></span>
+            <svg class="intro-divider-icon" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M9 2v3M9 13v3M2 9h3M13 9h3"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="9"
+                cy="9"
+                r="3"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+            </svg>
+            <span class="intro-divider-line"></span>
+          </div>
+          <p class="intro-desc">
+            Do forno direto pra alma. Aqui você encontra receitas que
+            <em>enchem a casa de cheiro</em> e transformam farinha e tempo em
+            algo verdadeiramente especial.
+          </p>
+        </div>
+        <div class="intro-ornament"></div>
+      </section>
 
-        <section class="introdução">
-            <div class="intro-ornament-top"></div>
-            <div class="intro-content">
-                <span class="intro-label">receitas artesanais</span>
-                <h1 class="intro-title">Pães</h1>
-                <div class="intro-divider">
-                    <span class="intro-divider-line"></span>
-                    <svg class="intro-divider-icon" viewBox="0 0 18 18" fill="none">
-                        <path d="M9 2v3M9 13v3M2 9h3M13 9h3" stroke="currentColor" stroke-width="1.4"
-                            stroke-linecap="round" />
-                        <circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.4" />
-                    </svg>
-                    <span class="intro-divider-line"></span>
-                </div>
-                <p class="intro-desc">
-                    Do forno direto pra alma. Aqui você encontra receitas que
-                    <em>enchem a casa de cheiro</em> e transformam farinha e tempo
-                    em algo verdadeiramente especial.
-                </p>
+      <span id="receitas"></span>
+
+      <section class="main_content">
+        <h2 class="section-title">Mais Populares</h2>
+        <div class="recipes-grid" id="recipesGrid">
+          <!-- Card em destaque -->
+          <article class="recipe-card featured" data-cat="doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/hfF7vK55NuorLeriSP8HiPFpM4srEgHmHCkCGP6b4Ic/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cmVjZWl0YXNuZXN0/bGUuY29tLmJyL3Np/dGVzL2RlZmF1bHQv/ZmlsZXMvc3R5bGVz/L3JlY2lwZV9kZXRh/aWxfZGVza3RvcF9u/ZXcvcHVibGljL3Ny/aF9yZWNpcGVzLzYx/MzFiNDAxMzQ1NmM0/MTM1NTZjOWU4MTFh/ZmY3NWQyLmpwZz9p/dG9rPTF1d05iWmY0"
+                alt="Pão de Queijo"
+              />
+              <span class="badge badge-category">Salgados</span>
+              <span class="badge badge-featured">Destaque</span>
             </div>
-            <div class="intro-ornament"></div>
-        </section>
-
-        <span id="receitas"></span>
-
-        <section class="main_content">
-            <h2 class="section-title">Mais Populares</h2>
-            <div class="recipes-grid" id="recipesGrid">
-
-                <!-- Card em destaque -->
-                <article class="recipe-card featured" data-cat="doces">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400/D2691E/FFF8F0?text=Receita+em+Destaque"
-                            alt="Bolo de Mel" />
-                        <span class="badge badge-category">Doces</span>
-                        <span class="badge badge-featured">Destaque</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Bolo de Mel com Especiarias</h3>
-                        <p class="card-desc">Um bolo úmido e aromático com gengibre, canela e mel artesanal. Perfeito
-                            para o café da manhã ou lanche da tarde.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                45 min
-                            </span>
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 13c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor"
-                                        stroke-width="1.2" />
-                                    <circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.2" />
-                                </svg>
-                                8 porções
-                            </span>
-                            <span class="meta-item difficulty medium">Médio</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <!-- Cards normais -->
-                <article class="recipe-card" data-cat="salgados">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/8B4513/FFF8F0?text=Pão+Artesanal" alt="Pão Artesanal" />
-                        <span class="badge badge-category">Salgados</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Pão Artesanal de Fermentação Natural</h3>
-                        <p class="card-desc">Crocante por fora, macio por dentro. Uma receita que vale cada hora de
-                            espera.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                3h 20min
-                            </span>
-                            <span class="meta-item difficulty hard">Avançado</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="doces">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/6B8E23/FFF8F0?text=Torta+de+Maçã" alt="Torta de Maçã" />
-                        <span class="badge badge-category">Doces</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Torta Rústica de Maçã com Canela</h3>
-                        <p class="card-desc">Uma torta simples e reconfortante que lembra as receitas de vó.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                1h 10min
-                            </span>
-                            <span class="meta-item difficulty easy">Fácil</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="bebidas vegano">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/D2691E/FFF8F0?text=Limonada+Rosa" alt="Limonada Rosa" />
-                        <span class="badge badge-category">Bebidas</span>
-                        <span class="badge badge-vegan">Vegano</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Limonada Rosa com Hibisco</h3>
-                        <p class="card-desc">Refrescante e cheia de cor, essa bebida é sucesso garantido nas reuniões de
-                            família.</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                15 min
-                            </span>
-                            <span class="meta-item difficulty easy">Fácil</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-cat="vegano salgados">
-                    <div class="card-image">
-                        <img src="https://placehold.co/400x280/6B8E23/FFF8F0?text=Quiche+Vegana" alt="Quiche Vegana" />
-                        <span class="badge badge-category">Salgados</span>
-                        <span class="badge badge-vegan">Vegano</span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Quiche Vegana de Alho-Poró</h3>
-                        <p class="card-desc">Uma quiche cremosa e saborosa sem ovos nem laticínios. Surpreendente!</p>
-                        <div class="card-meta">
-                            <span class="meta-item">
-                                <svg viewBox="0 0 16 16" fill="none">
-                                    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" />
-                                    <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                55 min
-                            </span>
-                            <span class="meta-item difficulty medium">Médio</span>
-                        </div>
-                        <a href="#" class="card-link">Ver receita completa →</a>
-                    </div>
-                </article>
-
+            <div class="card-body">
+              <h3 class="card-title">Pão de Queijo</h3>
+              <p class="card-desc">
+                Um clássico da culinária brasileira, feito com queijo minas e
+                farinha de milho. Perfeito para o café da manhã ou lanche da
+                tarde.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  40–50 minutos
+                </span>
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M2 13c0-3.3 2.7-6 6-6s6 2.7 6 6"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <circle
+                      cx="8"
+                      cy="5"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  12-15 porções
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a href="../receita_de_paes/pao_de_queijo.html" class="card-link"
+                >Ver receita completa →</a
+              >
             </div>
-        </section>
+          </article>
+
+          <!-- Cards normais -->
+          <article class="recipe-card" data-cat="Doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/cPcRyXIMm-8WHnJo_3AAoukkGy1x4Bg1Bpe9vLM6c4E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hbW9w/YW9jYXNlaXJvLmNv/bS5ici93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMS95dC0w/NjFfcGFvLWRlLWJh/bmFuYV9yZWNlaXRh/LTg0MHg1NjAuanBn"
+                alt="Pão de Banana"
+              />
+              <span class="badge badge-category">Doces</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pão de Banana</h3>
+              <p class="card-desc">
+                São receitas clássicas e versáteis que utilizam bananas maduras
+                para adoçar naturalmente a massa
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  50–60 minutos
+                </span>
+                <span class="meta-item difficulty easy">Fácil</span>
+              </div>
+              <a href="../receita_de_paes/Pao_de_banana.html" class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/_fVC2ICt2IY9olu-JlTKznSB9GqP9rpr-I7WDbME0po/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZW5h/dGEuY29tLmJyL2lt/YWdlcy9yZWNlaXRh/cy82NDQvcmVuYXRh/LWltYWdlbS1yZWNl/aXRhcy1wYW8tZG9j/ZS1kZS1wYWRhcmlh/LTEteGwuanBn"
+                alt="Pão Doce"
+              />
+              <span class="badge badge-category">Doces</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pão Doce</h3>
+              <p class="card-desc">
+                É um alimento de origem espanhola, mais especificamente de
+                Madri, conhecido por ser macio, coberto com creme, goiabada ou
+                frutas cristalizadas.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  1h30–2h
+                </span>
+                <span class="meta-item difficulty medium">Médio</span>
+              </div>
+              <a href="../receita_de_paes/Pao_doce.html" class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="Salgados">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/cnCQi92vWNbxJex_J7S5UTc3o2qhPPH_dbLxNrEFoRM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzQ4LzQ3LzU0/LzM2MF9GXzU0ODQ3/NTQ1MF9adkNFTTNr/MDdjdTZZeUZUaTl1/MWQ2bW9wSTV4cGhK/eS5qcGc"
+                alt="Pão Francês"
+              />
+              <span class="badge badge-category">Salgados</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pão Francês</h3>
+              <p class="card-desc">
+                Um pão tradicional e delicioso, conhecido por sua crosta
+                crocante e interior macio.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  2h–2h30
+                </span>
+                <span class="meta-item difficulty hard">Avançado</span>
+              </div>
+              <a href="../receita_de_paes/Pao_Frances.html" class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+
+          <article class="recipe-card" data-cat="Doces">
+            <div class="card-image">
+              <img
+                src="https://imgs.search.brave.com/gDbRjkRyzATycn8s78DtCi0tBa-5uBDWynpuHVjuVr4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9ib2xpbmhvcy1k/ZS1wYW8tcmVjZW0t/Y296aWRvcy1jb20t/bGVpdGVfNjA1MDIy/LTUzNDY0LmpwZz9z/ZW10PWFpc19oeWJy/aWQmdz03NDA"
+                alt="Pão de Leite"
+              />
+              <span class="badge badge-category">Doces</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Pão de leite</h3>
+              <p class="card-desc">
+                Um pão macio e saboroso, perfeito para o café da manhã.
+              </p>
+              <div class="card-meta">
+                <span class="meta-item">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="6.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M8 5v3.5l2.5 1.5"
+                      stroke="currentColor"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  1h30–2h
+                </span>
+                <span class="meta-item difficulty medium">Médio</span>
+              </div>
+              <a href="../receita_de_paes/Pao_de_Leite.html" class="card-link"
+                >Ver receita completa →</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer>
-        <!-- FRASE DE DESTAQUE -->
-        <section class="quote-band">
-            <blockquote>
-                "Cozinhar é um ato de amor — para com quem recebe o prato e
-                para com quem o preparou."
-                <cite>— Sabor &amp; Arte</cite>
-            </blockquote>
-        </section>
-        <p>Desenvolvido por <strong>Leonardo S. Souza | Gabriel Serafim | Venancio Trancoso | Gustavo
-                Andrade</strong> · Trabalho Acadêmico · 2026</p>
+      <!-- FRASE DE DESTAQUE -->
+      <section class="quote-band">
+        <blockquote>
+          "Cozinhar é um ato de amor — para com quem recebe o prato e para com
+          quem o preparou."
+          <cite>— Sabor &amp; Arte</cite>
+        </blockquote>
+      </section>
+      <p>
+        Desenvolvido por
+        <strong
+          >Leonardo S. Souza | Gabriel Serafim | Venancio Trancoso | Gustavo
+          Andrade</strong
+        >
+        · Trabalho Acadêmico · 2026
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>
